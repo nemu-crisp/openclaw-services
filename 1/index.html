@@ -5,406 +5,288 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- SEO Meta Tags -->
-    <title>OpenClaw Bot Development | Custom Automation Solutions</title>
-    <meta name="description" content="Build custom OpenClaw bots for automation, workflow optimization, and platform integrations. $200/hour. Fast turnaround, clean code you own.">
-    <meta name="keywords" content="OpenClaw, bot development, automation, workflow automation, Discord bots, iMessage bots, Slack integration, custom bots">
-    <meta name="author" content="Justin Crisp">
+    <title>CrispClaws™ | OpenClaw Bot Builders</title>
+    <meta name="description" content="Custom bot development and automation solutions. Build powerful OpenClaw bots for your workflow. $200/hour. Fast turnaround.">
+    <meta name="keywords" content="CrispClaws, OpenClaw, bot development, automation, Discord bots, workflow automation">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://nemu-crisp.github.io/openclaw-services/">
     
-    <!-- Open Graph / Facebook -->
+    <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://nemu-crisp.github.io/openclaw-services/">
-    <meta property="og:title" content="OpenClaw Bot Development | Custom Automation Solutions">
-    <meta property="og:description" content="Build custom OpenClaw bots for automation, workflow optimization, and platform integrations. $200/hour. Fast turnaround, clean code you own.">
-    <meta property="og:image" content="https://nemu-crisp.github.io/openclaw-services/og-image.svg">
-    
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://nemu-crisp.github.io/openclaw-services/">
-    <meta property="twitter:title" content="OpenClaw Bot Development | Custom Automation Solutions">
-    <meta property="twitter:description" content="Build custom OpenClaw bots for automation, workflow optimization, and platform integrations. $200/hour.">
-    <meta property="twitter:image" content="https://nemu-crisp.github.io/openclaw-services/og-image.svg">
+    <meta property="og:title" content="CrispClaws™ | OpenClaw Bot Builders">
+    <meta property="og:description" content="Custom bot development and automation solutions. $200/hour.">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦞</text></svg>">
     
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    
-    <!-- Structured Data / JSON-LD -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "CrispClaws™ | OpenClaw bot builders",
-      "description": "Custom bot development and automation solutions for teams.",
-      "url": "https://nemu-crisp.github.io/openclaw-services/",
-      "priceRange": "$200/hour",
-      "areaServed": "Worldwide",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+1-949-873-3619",
-        "contactType": "customer service",
-        "email": "justin@crispcode.io"
-      }
-    }
-    </script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --text: #1e293b;
+            --text-muted: #64748b;
+            --bg: #ffffff;
+            --bg-secondary: #f8fafc;
+            --border: #e2e8f0;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background: var(--bg);
+        }
+        
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+        
+        /* Nav */
+        nav {
+            position: fixed; top: 0; left: 0; right: 0;
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(8px);
+            border-bottom: 1px solid var(--border);
+            z-index: 1000;
+            padding: 16px 0;
+        }
+        nav .container {
+            display: flex; justify-content: space-between; align-items: center;
+        }
+        .logo { font-size: 1.5rem; font-weight: 700; color: var(--text); text-decoration: none; }
+        .logo span { font-size: 1.5rem; }
+        nav a:not(.btn) { color: var(--text-muted); text-decoration: none; margin-left: 24px; font-weight: 500; }
+        nav a:not(.btn):hover { color: var(--text); }
+        .btn {
+            display: inline-flex; align-items: center; padding: 12px 24px;
+            background: var(--primary); color: white; border-radius: 8px;
+            text-decoration: none; font-weight: 600; border: none; cursor: pointer;
+            transition: all 0.2s;
+        }
+        .btn:hover { background: var(--primary-dark); transform: translateY(-2px); }
+        
+        /* Hero */
+        .hero { padding: 140px 0 80px; text-align: center; background: var(--bg-secondary); }
+        .hero h1 { font-size: clamp(2.5rem, 5vw, 4rem); margin-bottom: 20px; line-height: 1.1; }
+        .hero p { font-size: 1.25rem; color: var(--text-muted); max-width: 600px; margin: 0 auto 32px; }
+        .hero-buttons { display: flex; gap: 16px; justify-content: center; }
+        .btn-secondary { background: transparent; color: var(--text); border: 1px solid var(--border); }
+        .btn-secondary:hover { background: var(--bg); }
+        
+        /* Sections */
+        section { padding: 80px 0; }
+        h2 { font-size: clamp(2rem, 4vw, 2.5rem); margin-bottom: 12px; text-align: center; }
+        .section-subtitle { text-align: center; color: var(--text-muted); margin-bottom: 48px; }
+        
+        /* Services Grid */
+        .services-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 24px;
+        }
+        .service-card {
+            padding: 32px; background: var(--bg); border-radius: 12px;
+            border: 1px solid var(--border); transition: all 0.2s;
+        }
+        .service-card:hover { transform: translateY(-4px); box-shadow: 0 12px 24px rgba(0,0,0,0.1); }
+        .service-card h3 { margin-bottom: 12px; }
+        .service-card p { color: var(--text-muted); }
+        .service-icon { font-size: 2.5rem; margin-bottom: 16px; }
+        
+        /* Pricing */
+        .pricing-card {
+            max-width: 400px; margin: 0 auto; background: var(--bg);
+            border: 2px solid var(--border); border-radius: 16px; padding: 48px 32px; text-align: center;
+        }
+        .price { display: flex; align-items: baseline; justify-content: center; gap: 4px; margin-bottom: 24px; }
+        .price .amount { font-size: 3.5rem; font-weight: 700; }
+        .price .period { color: var(--text-muted); }
+        .pricing-features { list-style: none; margin-bottom: 32px; text-align: left; }
+        .pricing-features li { padding: 12px 0; border-bottom: 1px solid var(--border); }
+        .pricing-features li::before { content: "✓"; margin-right: 12px; color: var(--primary); font-weight: 600; }
+        .pricing-note { font-size: 0.875rem; color: var(--text-muted); margin-top: 16px; }
+        
+        /* Form Section */
+        .form-section { background: var(--bg-secondary); }
+        .form-wrapper {
+            max-width: 500px; margin: 0 auto; background: var(--bg);
+            border-radius: 16px; padding: 48px 32px; border: 1px solid var(--border);
+        }
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; font-weight: 600; margin-bottom: 8px; }
+        .form-group input, .form-group textarea {
+            width: 100%; padding: 14px 16px; border: 2px solid var(--border);
+            border-radius: 8px; font-size: 1rem; transition: border-color 0.2s;
+        }
+        .form-group input:focus, .form-group textarea:focus {
+            outline: none; border-color: var(--primary);
+        }
+        .form-group textarea { min-height: 100px; resize: vertical; }
+        .form-submit { width: 100%; }
+        .form-success {
+            display: none; text-align: center; padding: 32px;
+        }
+        .form-success.show { display: block; }
+        .form-success h3 { margin-bottom: 12px; color: #10b981; }
+        .form-success p { color: var(--text-muted); }
+        
+        /* Footer */
+        footer { padding: 48px 0; text-align: center; border-top: 1px solid var(--border); }
+        footer p { color: var(--text-muted); font-size: 0.875rem; }
+        
+        @media (max-width: 768px) {
+            nav a:not(.btn) { display: none; }
+            .hero-buttons { flex-direction: column; }
+        }
+    </style>
 </head>
 <body>
-    <nav class="navbar">
+    <nav>
         <div class="container">
-            <a href="#" class="logo">
-                <span class="logo-icon">⚡</span>
-                OpenClaw
-            </a>
-            <div class="nav-links">
+            <a href="#" class="logo"><span>🦞</span> CrispClaws™</a>
+            <div>
                 <a href="#services">Services</a>
                 <a href="#pricing">Pricing</a>
-                <a href="#contact" class="btn btn-primary">Get Started</a>
+                <a href="#contact" class="btn">Get Started</a>
             </div>
-            <button class="mobile-menu-btn" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
         </div>
     </nav>
 
     <section class="hero">
-        <div class="hero-bg">
-            <div class="hero-circle hero-circle-1"></div>
-            <div class="hero-circle hero-circle-2"></div>
-            <div class="hero-circle hero-circle-3"></div>
-        </div>
         <div class="container">
-            <div class="hero-content">
-                <div class="hero-badge">
-                    <span class="badge-dot"></span>
-                    Available for new projects
-                </div>
-                <h1>Automate Your Workflow<br><span class="gradient-text">With Intelligent Bots</span></h1>
-                <p class="hero-subtitle">Stop wasting time on repetitive tasks. We build custom OpenClaw bots that handle the busywork so you can focus on what matters.</p>
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary btn-large">
-                        <span>Build My Bot</span>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M5 12h14M12 5l7 7-7 7"/>
-                        </svg>
-                    </a>
-                    <a href="#services" class="btn btn-secondary btn-large">See What's Possible</a>
-                </div>
-                <div class="trust-badges">
-                    <div class="trust-badge">
-                        <div class="avatar-stack">
-                            <span class="avatar">👨‍💻</span>
-                            <span class="avatar">👩‍💼</span>
-                            <span class="avatar">👨‍🔧</span>
-                        </div>
-                        <span>Trusted by teams at CrispX, Oomi, and more</span>
-                    </div>
-                </div>
+            <h1>Automate Your Workflow<br>With Intelligent Bots</h1>
+            <p>Stop wasting time on repetitive tasks. We build custom OpenClaw bots that handle the busywork so you can focus on what matters.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn">Build My Bot</a>
+                <a href="#services" class="btn btn-secondary">See Services</a>
             </div>
         </div>
     </section>
 
-    <section id="problems" class="problems">
+    <section id="services">
         <div class="container">
-            <div class="section-header">
-                <span class="section-tag">The Problem</span>
-                <h2 class="section-title">Stop Letting Repetitive Tasks Slow You Down</h2>
-                <p class="section-subtitle">If any of this sounds familiar, we can help.</p>
-            </div>
-            <div class="problems-grid">
-                <div class="problem-card">
-                    <div class="problem-icon-wrapper">
-                        <div class="problem-icon">⏰</div>
-                    </div>
-                    <h3>Manual Processes</h3>
-                    <p>You're spending hours every week on tasks that should be automated—notifications, reminders, data entry, you name it.</p>
-                    <div class="problem-decoration"></div>
-                </div>
-                <div class="problem-card">
-                    <div class="problem-icon-wrapper">
-                        <div class="problem-icon">🔀</div>
-                    </div>
-                    <h3>Disconnected Tools</h3>
-                    <p>Your team uses a dozen different platforms—Discord, iMessage, Slack—but nothing talks to each other.</p>
-                    <div class="problem-decoration"></div>
-                </div>
-                <div class="problem-card">
-                    <div class="problem-icon-wrapper">
-                        <div class="problem-icon">🧩</div>
-                    </div>
-                    <h3>No Integration</h3>
-                    <p>You need your tools to work together, but building custom integrations seems too complex or expensive.</p>
-                    <div class="problem-decoration"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="services" class="services">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">What We Do</span>
-                <h2 class="section-title">Powerful Automation Solutions</h2>
-                <p class="section-subtitle">Tailored to your needs, built for scale.</p>
-            </div>
+            <h2>What We Build</h2>
+            <p class="section-subtitle">Powerful automation solutions, tailored to your needs.</p>
             <div class="services-grid">
                 <div class="service-card">
-                    <div class="service-icon-wrapper">
-                        <div class="service-icon">🤖</div>
-                    </div>
-                    <h3>Custom OpenClaw Bots</h3>
-                    <p>Bots designed from scratch for your exact workflow—whether it's managing servers, handling support, or automating internal processes.</p>
-                    <div class="service-arrow">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M5 12h14M12 5l7 7-7 7"/>
-                        </svg>
-                    </div>
+                    <div class="service-icon">🤖</div>
+                    <h3>Custom Bots</h3>
+                    <p>Bots designed from scratch for your exact workflow—servers, support, automation.</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon-wrapper">
-                        <div class="service-icon">⚡</div>
-                    </div>
+                    <div class="service-icon">⚡</div>
                     <h3>Workflow Automation</h3>
-                    <p>Connect your tools and let bots handle the repetitive stuff. One trigger, infinite possibilities.</p>
-                    <div class="service-arrow">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M5 12h14M12 5l7 7-7 7"/>
-                        </svg>
-                    </div>
+                    <p>Connect your tools and let bots handle the repetitive stuff.</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon-wrapper">
-                        <div class="service-icon">🔗</div>
-                    </div>
+                    <div class="service-icon">🔗</div>
                     <h3>Platform Integrations</h3>
-                    <p>Seamlessly bridge Discord, iMessage, Slack, and other platforms into a unified system.</p>
-                    <div class="service-arrow">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M5 12h14M12 5l7 7-7 7"/>
-                        </svg>
-                    </div>
+                    <p>Bridge Discord, iMessage, Slack, and other platforms.</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon-wrapper">
-                        <div class="service-icon">🛠️</div>
-                    </div>
+                    <div class="service-icon">🛠️</div>
                     <h3>Maintenance & Support</h3>
-                    <p>Bots that stay healthy. We handle updates, monitoring, and quick fixes so you don't have to worry.</p>
-                    <div class="service-arrow">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M5 12h14M12 5l7 7-7 7"/>
-                        </svg>
-                    </div>
+                    <p>Updates, monitoring, and quick fixes to keep bots running smoothly.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="process" class="process">
+    <section id="pricing" style="background: var(--bg-secondary);">
         <div class="container">
-            <div class="section-header">
-                <span class="section-tag">How It Works</span>
-                <h2 class="section-title">Simple, Transparent Process</h2>
-                <p class="section-subtitle">No surprises, just results.</p>
-            </div>
-            <div class="process-steps">
-                <div class="step">
-                    <div class="step-connector"></div>
-                    <div class="step-number">
-                        <span>1</span>
-                    </div>
-                    <div class="step-content">
-                        <h3>Consultation</h3>
-                        <p>Tell us what you need. We'll map out the best solution—no sales pitch, just honest advice.</p>
-                    </div>
+            <h2>Simple, Transparent Pricing</h2>
+            <p class="section-subtitle">Pay for results, not guesses.</p>
+            <div class="pricing-card">
+                <div class="price">
+                    <span class="amount">$200</span>
+                    <span class="period">/hour</span>
                 </div>
-                <div class="step">
-                    <div class="step-connector"></div>
-                    <div class="step-number">
-                        <span>2</span>
-                    </div>
-                    <div class="step-content">
-                        <h3>Development</h3>
-                        <p>We build your bot with clean code, regular updates, and your feedback at every step.</p>
-                    </div>
-                </div>
-                <div class="step">
-                    <div class="step-connector"></div>
-                    <div class="step-number">
-                        <span>3</span>
-                    </div>
-                    <div class="step-content">
-                        <h3>Launch & Support</h3>
-                        <p>Deploy with confidence. Ongoing maintenance keeps everything running smoothly.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="pricing" class="pricing">
-        <div class="container">
-            <div class="pricing-wrapper">
-                <div class="pricing-card">
-                    <div class="pricing-header">
-                        <span class="pricing-tag">Development & Consultation</span>
-                        <div class="price">
-                            <span class="currency">$</span>
-                            <span class="amount">200</span>
-                            <span class="period">/hour</span>
-                        </div>
-                    </div>
-                    <ul class="pricing-features">
-                        <li>
-                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M20 6L9 17l-5-5"/>
-                            </svg>
-                            Custom bot development
-                        </li>
-                        <li>
-                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M20 6L9 17l-5-5"/>
-                            </svg>
-                            Integration architecture
-                        </li>
-                        <li>
-                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M20 6L9 17l-5-5"/>
-                            </svg>
-                            Automation workflows
-                        </li>
-                        <li>
-                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M20 6L9 17l-5-5"/>
-                            </svg>
-                            Bug fixes & maintenance
-                        </li>
-                        <li>
-                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M20 6L9 17l-5-5"/>
-                            </svg>
-                            Direct developer access
-                        </li>
-                    </ul>
-                    <a href="#contact" class="btn btn-primary btn-block">
-                        Get Your Free Quote
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M5 12h14M12 5l7 7-7 7"/>
-                        </svg>
-                    </a>
-                    <p class="pricing-note">Most projects range from $2,000–$15,000 depending on complexity.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="guarantee" class="guarantee">
-        <div class="container">
-            <div class="guarantee-content">
-                <h2>Our Promise to You</h2>
-                <ul class="guarantee-list">
-                    <li>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M20 6L9 17l-5-5"/>
-                        </svg>
-                        No scope creep surprises
-                    </li>
-                    <li>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M20 6L9 17l-5-5"/>
-                        </svg>
-                        Clear communication throughout
-                    </li>
-                    <li>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M20 6L9 17l-5-5"/>
-                        </svg>
-                        Code you actually own
-                    </li>
-                    <li>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M20 6L9 17l-5-5"/>
-                        </svg>
-                        Fast turnaround times
-                    </li>
+                <ul class="pricing-features">
+                    <li>Custom bot development</li>
+                    <li>Integration architecture</li>
+                    <li>Automation workflows</li>
+                    <li>Bug fixes & maintenance</li>
+                    <li>Direct developer access</li>
                 </ul>
+                <a href="#contact" class="btn btn-block">Get Your Free Quote</a>
+                <p class="pricing-note">Most projects range from $2,000–$15,000.</p>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="contact">
+    <section id="contact" class="form-section">
         <div class="container">
-            <div class="contact-wrapper">
-                <div class="contact-content">
-                    <span class="section-tag">Get in Touch</span>
-                    <h2 class="section-title">Ready to Automate?</h2>
-                    <p class="section-subtitle">Let's discuss your project and see if we're a good fit.</p>
-                    
-                    <div class="contact-methods">
-                        <a href="mailto:justin@crispcode.io" class="contact-card">
-                            <div class="contact-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                                    <polyline points="22,6 12,13 2,6"/>
-                                </svg>
-                            </div>
-                            <div class="contact-details">
-                                <span class="contact-label">Email</span>
-                                <span class="contact-value">justin@crispcode.io</span>
-                            </div>
-                            <div class="contact-arrow">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M5 12h14M12 5l7 7-7 7"/>
-                                </svg>
-                            </div>
-                        </a>
-                        <a href="tel:+19498733619" class="contact-card">
-                            <div class="contact-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
-                                </svg>
-                            </div>
-                            <div class="contact-details">
-                                <span class="contact-label">Phone</span>
-                                <span class="contact-value">+1 (949) 873-3619</span>
-                            </div>
-                            <div class="contact-arrow">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M5 12h14M12 5l7 7-7 7"/>
-                                </svg>
-                            </div>
-                        </a>
+            <h2>Ready to Automate?</h2>
+            <p class="section-subtitle">Tell us about your project and we'll get back to you within 24 hours.</p>
+            
+            <div class="form-wrapper">
+                <!-- Replace YOUR_FORMSPREE_ID with your actual Formspree ID -->
+                <form id="lead-form" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required placeholder="John Smith">
                     </div>
-                    
-                    <p class="contact-note">We'll get back to you within 24 hours.</p>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required placeholder="john@company.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="project">Project Details (optional)</label>
+                        <textarea id="project" name="project" placeholder="Tell us about your bot needs..."></textarea>
+                    </div>
+                    <button type="submit" class="btn form-submit">Send Inquiry</button>
+                </form>
+                
+                <div class="form-success" id="form-success">
+                    <h3>✨ Thanks for reaching out!</h3>
+                    <p>We've received your inquiry and will get back to you within 24 hours.</p>
                 </div>
             </div>
+            
+            <p style="text-align: center; margin-top: 24px; color: var(--text-muted);">
+                Or email us directly: <a href="mailto:justin@crispcode.io">justin@crispcode.io</a>
+            </p>
         </div>
     </section>
 
-    <footer class="footer">
+    <footer>
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <span class="logo">⚡ OpenClaw</span>
-                    <p>Custom bot development and automation solutions.</p>
-                </div>
-                <div class="footer-links">
-                    <a href="#services">Services</a>
-                    <a href="#pricing">Pricing</a>
-                    <a href="#contact">Contact</a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 CrispClaws™ | OpenClaw bot builders. All rights reserved.</p>
-            </div>
+            <p>&copy; 2026 CrispClaws™ | OpenClaw bot builders. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        // Handle Formspree submission
+        document.getElementById('lead-form').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            const form = this;
+            const submitBtn = form.querySelector('button[type="submit"]');
+            
+            // Replace with your Formspree endpoint
+            const formspreeEndpoint = 'https://formspree.io/f/YOUR_FORMSPREE_ID';
+            
+            try {
+                submitBtn.textContent = 'Sending...';
+                submitBtn.disabled = true;
+                
+                const response = await fetch(formspreeEndpoint, {
+                    method: 'POST',
+                    body: new FormData(form),
+                    headers: { 'Accept': 'application/json' }
+                });
+                
+                if (response.ok) {
+                    form.style.display = 'none';
+                    document.getElementById('form-success').classList.add('show');
+                } else {
+                    alert('Something went wrong. Please try again or email us directly.');
+                    submitBtn.textContent = 'Send Inquiry';
+                    submitBtn.disabled = false;
+                }
+            } catch (error) {
+                alert('Error submitting form. Please try again.');
+                submitBtn.textContent = 'Send Inquiry';
+                submitBtn.disabled = false;
+            }
+        });
+    </script>
 </body>
 </html>

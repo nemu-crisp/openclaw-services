@@ -1,23 +1,52 @@
-# OpenClaw Services
+# CrispClaws™ Landing Page
 
-Custom bot development services for modern teams. We build intelligent automation bots tailored to your workflow.
+**🦞 CrispClaws™ | OpenClaw bot builders**
 
-## Services
+A single, clean landing page for bot development services.
 
-- **OpenClaw Bot Creation** - Custom bots for Discord, iMessage, and more
-- **Workflow Automation** - Streamline your processes
-- **Platform Integrations** - Connect your tools seamlessly
-- **Maintenance & Support** - Keep your bots running smoothly
+## Live URL
+https://nemu-crisp.github.io/openclaw-services/
 
-## Pricing
+---
 
-$200/hour for all development services.
+## Formspree Setup (Required)
 
-## Contact
+The form needs your Formspree ID to work:
 
-- Email: justin@crispcode.io
-- Phone: +1 (949) 873-3619
+1. **Create a free Formspree account:** https://formspree.io
+2. **Create a new form** with fields: Name, Email, Project Details
+3. **Copy your Form ID** (from the form endpoint URL)
+4. **Update `index.html`:**
+   - Replace `YOUR_FORMSPREE_ID` in the form action
+   - Replace `YOUR_FORMSPREE_ID` in the JavaScript
 
-## Deploy
+Formspree features (free tier):
+- ✅ Email notifications for new submissions
+- ✅ Spam filtering
+- ✅ Data dashboard
+- ❌ Auto-responder (requires paid plan)
 
-This site is deployed via GitHub Pages from the `main` branch.
+---
+
+## Editing the Page
+
+Edit `index.html` directly. It's a self-contained single-file design with embedded CSS and JavaScript.
+
+### To customize:
+- **Services:** Find the `<section id="services">` section
+- **Pricing:** Find the `<section id="pricing">` section  
+- **Form:** Find the `<section id="contact">` section
+- **Footer:** Find the `<footer>` element
+
+---
+
+## Auto-Responder Email (Optional)
+
+For automatic thank you emails, upgrade to Formspree Plus ($10/month) or use Google Forms with the Apps Script method in `CRM-SETUP.md`.
+
+---
+
+## Tech Stack
+- Pure HTML/CSS/JS (no frameworks)
+- GitHub Pages hosting
+- Formspree for form handling
